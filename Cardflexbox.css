@@ -20,6 +20,7 @@
     overflow: hidden;
     width: 300px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 2s;
 }
 
 .card-header{
@@ -36,12 +37,20 @@
     filter: grayscale(100%);
     transition: 0.5s;
 }
-img:hover {  /*:hover comment la souris survole l'image*/
-    filter: none;
-}
+
 .card-text{
     padding: 20px;
 }
 .card-text h1{
     font-size: 35px;
-}/*teste pour git*/
+}
+.card:hover{
+transform: translateY(-15%);
+}
+.card:hover .card-header img{
+    filter: none;
+}  
+
+.card:hover .card-header .card-heart{
+    transform: translateX(-10px);
+}
