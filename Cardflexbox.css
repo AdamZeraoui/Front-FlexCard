@@ -51,6 +51,8 @@ transform: translateY(-15%);
     filter: none;
 }  
 
-.card:hover .card-header .card-heart{
-    transform: translateX(-10px);
+.card-heart{
+    height: 50px;
+    width: 50px;
+    background-color: red;
 }
